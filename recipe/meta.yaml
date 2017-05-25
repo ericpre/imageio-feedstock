@@ -9,8 +9,8 @@ package:
   version: {{ version }}
 
 source:
-  fn: imageio-{{ version }}.zip
-  url: https://pypi.io/packages/source/i/imageio/imageio-{{ version }}.zip
+  fn: imageio-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/i/imageio/imageio-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
