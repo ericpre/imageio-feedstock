@@ -1,8 +1,8 @@
 # Info that changes with each new release
 # (get sha256 from https://pypi.org/project/imageio/#files)
 
-{% set version = "2.2.0" %}
-{% set sha256 = "6dd95300d3d64713a2649334390fd9cf96712013172afd6e73b008e00934a73f" %}
+{% set version = "2.3.0" %}
+{% set sha256 = "c4fd5183c342d47fdc2e98552d14e3f24386021bbc3efedd1e3b579d7d249c07" %}
 
 package:
   name: imageio
