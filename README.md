@@ -14,14 +14,15 @@ Summary: a Python library for reading and writing image data
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/imageio-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/imageio-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/imageio-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/imageio-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/imageio-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/imageio-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/imageio-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/imageio-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/imageio/badges/version.svg)](https://anaconda.org/conda-forge/imageio)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/imageio/badges/downloads.svg)](https://anaconda.org/conda-forge/imageio)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-imageio-green.svg)](https://anaconda.org/conda-forge/imageio) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/imageio.svg)](https://anaconda.org/conda-forge/imageio) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/imageio.svg)](https://anaconda.org/conda-forge/imageio) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/imageio.svg)](https://anaconda.org/conda-forge/imageio) |
 
 Installing imageio
 ==================
