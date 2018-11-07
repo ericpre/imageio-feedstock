@@ -3,19 +3,20 @@ About imageio
 
 Home: http://imageio.github.io
 
-Package license: BSD 2-Clause
+Package license: BSD-2-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: a Python library for reading and writing image data
+Summary: A Python library for reading and writing image data
 
 
 
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/imageio-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/imageio-feedstock)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/imageio-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/imageio-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/imageio-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/imageio-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/imageio-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/imageio-feedstock/branch/master)
 
 Current release info
 ====================
