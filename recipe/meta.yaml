@@ -1,5 +1,5 @@
-{% set version = "2.8.0" %}
-{% set sha256 = "fb5fd6d3d17126bbaac9af29fe340e2c97a196eb9416d4f28c0e543744a152cf" %}
+{% set version = "2.9.0" %}
+{% set sha256 = "52ddbaeca2dccf53ba2d6dec5676ca7bc3b2403ef8b37f7da78b7654bb3e10f0" %}
 
 package:
   name: imageio
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/imageio/imageio-{{ version }}.tar.gz
-  sha256:  {{ sha256 }}
+  sha256: {{ sha256 }}
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
     - imageio_download_bin = imageio.__main__:download_bin_main
     - imageio_remove_bin = imageio.__main__:remove_bin_main
