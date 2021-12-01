@@ -43,6 +43,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - anjos
     - almarklein
     - blink1073
     - jni
