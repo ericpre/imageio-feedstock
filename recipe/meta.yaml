@@ -10,7 +10,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
@@ -24,14 +24,24 @@ requirements:
   run:
     - python >=3
     - numpy
-    - pillow
+    - pillow >=8.3.2
 
 test:
+  requires:
+    - pytest
+    - pytest-cov
+    - invoke
+    - psutil
+    - tifffile
   imports:
     - imageio
+  source_files:
+    - tests/
+    - .coveragerc
   commands:
     - imageio_download_bin -h
     - imageio_remove_bin -h
+    - PYTEST_ADDOPTS="--ignore=tests/test_ffmpeg.py" invoke test --unit
 
 about:
   home: https://imageio.github.io
