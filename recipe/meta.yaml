@@ -10,7 +10,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
@@ -24,14 +24,26 @@ requirements:
   run:
     - python >=3
     - numpy
-    - pillow
+    - pillow >=8.3.2
 
 test:
+  requires:
+    - pytest
+    # optional add-ons that activate functionality
+    - psutil
+    - tifffile
+    - gdal
+    - astropy
+    - git
+    #- freeimage test would also require libGL, but that is heavier
   imports:
     - imageio
+  source_files:
+    - tests/
   commands:
     - imageio_download_bin -h
     - imageio_remove_bin -h
+    - pytest -sv --ignore=tests/test_ffmpeg.py --ignore=tests/test_ffmpeg_info.py tests/ -k "not test_findlib2"
 
 about:
   home: https://imageio.github.io
