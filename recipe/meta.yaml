@@ -35,6 +35,7 @@ test:
     - gdal
     - astropy
     - git
+    - freeimage
   imports:
     - imageio
   source_files:
