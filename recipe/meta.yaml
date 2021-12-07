@@ -1,5 +1,5 @@
-{% set version = "2.13.1" %}
-{% set sha256 = "d3672d6a676f284c13a89d632b07b441f234caf0748e59271a18464a84172040" %}
+{% set version = "2.13.2" %}
+{% set sha256 = "5b7a55d07de88a2fd70f18a1608ca05ba2b55596a942fb2c390240201009a6c3" %}
 
 package:
   name: imageio
@@ -10,7 +10,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
