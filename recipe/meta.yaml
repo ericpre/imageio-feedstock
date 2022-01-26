@@ -28,14 +28,13 @@ requirements:
 
 test:
   requires:
+    - git
     - pytest
-    # optional add-ons that activate functionality
     - psutil
     - tifffile
     - gdal
     - astropy
-    - git
-    #- freeimage test would also require libGL, but that is heavier
+    - freeimage
   imports:
     - imageio
   source_files:
