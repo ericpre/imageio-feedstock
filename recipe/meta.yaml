@@ -44,7 +44,7 @@ test:
   commands:
     - imageio_download_bin -h
     - imageio_remove_bin -h
-    - pytest -sv
+    - pytest -sv tests/ -k "not test_findlib2"
 
 about:
   home: https://imageio.github.io
