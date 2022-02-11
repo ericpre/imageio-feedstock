@@ -36,6 +36,7 @@ test:
     - astropy
     - freeimage
     - fsspec
+    - requests
   imports:
     - imageio
   source_files:
