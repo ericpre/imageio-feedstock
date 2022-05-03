@@ -36,8 +36,8 @@ test:
     - freeimage
     - fsspec
     - requests
-    #- av
-    - opencv
+    - av
+    #- opencv
   imports:
     - imageio
   source_files:
