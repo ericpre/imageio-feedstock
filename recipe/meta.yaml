@@ -9,7 +9,7 @@ source:
   sha256: cd8c946ecdf71f2fc74419b2e3c97a46104e91c2d2c4288d3217eae366778638
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
@@ -22,7 +22,7 @@ requirements:
     - python >=3
   run:
     - python >=3
-    - numpy >=1.20.0
+    - numpy
     - pillow >=8.3.2
 
 test:
