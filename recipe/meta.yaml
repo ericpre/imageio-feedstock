@@ -1,4 +1,4 @@
-{% set version = "2.19.0" %}
+{% set version = "2.19.1" %}
 
 package:
   name: imageio
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/imageio/imageio-{{ version }}.tar.gz
-  sha256: cd8c946ecdf71f2fc74419b2e3c97a46104e91c2d2c4288d3217eae366778638
+  sha256: d63600626b80ebe1ec9614c33434879c754dea328717f4e2cebe88f156fa1a9c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
