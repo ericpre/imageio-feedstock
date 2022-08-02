@@ -7,6 +7,8 @@ package:
 source:
   url: https://pypi.io/packages/source/i/imageio/imageio-{{ version }}.tar.gz
   sha256: a5d19c3c787d5b4920356d85999a24fcff32be8941950dc2409ec1513993952d
+  patches:
+    - tempfix-pyav-plugin.patch
 
 build:
   number: 0
