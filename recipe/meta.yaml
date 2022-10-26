@@ -40,6 +40,7 @@ test:
     - requests
     - av
     #- opencv
+    - imageio-ffmpeg
   imports:
     - imageio
   source_files:
