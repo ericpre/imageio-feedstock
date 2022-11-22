@@ -9,6 +9,7 @@ source:
   sha256: 0fae027addf02bc89c73a56cc157ad84557f8b8b84aa19b4cb706fefca2d88ff
   patches:
     - tempfix-pyav-plugin.patch
+    - xfail-known-issues.patch
 
 build:
   number: 0
