@@ -39,7 +39,7 @@ test:
     - freeimage
     - fsspec
     - requests
-    - av
+    - av !=10.0.0
     #- opencv
     - imageio-ffmpeg
   imports:
