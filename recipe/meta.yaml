@@ -1,4 +1,4 @@
-{% set version = "2.23.0" %}
+{% set version = "2.24.0" %}
 
 package:
   name: imageio
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/imageio/imageio-{{ version }}.tar.gz
-  sha256: cb635709765e527c94890b4fbb6870e59213fe182a1c8086d167eb3626073cbd
+  sha256: f240f8229f4f329a1546281194b52da5d6694141a524668fed3f81b0d07782fa
   patches:
     - tempfix-pyav-plugin.patch
     - xfail-known-issues.patch
