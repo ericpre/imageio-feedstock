@@ -1,11 +1,11 @@
-About imageio
-=============
+About imageio-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/imageio-feedstock/blob/main/LICENSE.txt)
 
 Home: https://imageio.github.io
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/imageio-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python library for reading and writing image data
 
