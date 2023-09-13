@@ -1,8 +1,8 @@
 diff --git a/tests/test_core.py b/tests/test_core.py
-index 965138e..193374f 100644
+index ff35fb7..318f046 100644
 --- a/tests/test_core.py
 +++ b/tests/test_core.py
-@@ -1034,6 +1034,7 @@ def test_format_hint_malformatted(test_images):
+@@ -1028,6 +1028,7 @@ def test_format_hint_malformatted(test_images):
  
  
  @deprecated_test
@@ -11,10 +11,10 @@ index 965138e..193374f 100644
      im_new = iio.v3.imread(test_images / "chelsea.png", format_hint=".png")
  
 diff --git a/tests/test_ffmpeg.py b/tests/test_ffmpeg.py
-index efcab0a..8f3917e 100644
+index 1cc0a8c..365b02e 100644
 --- a/tests/test_ffmpeg.py
 +++ b/tests/test_ffmpeg.py
-@@ -335,6 +335,7 @@ def test_writer_file_properly_closed(tmpdir):
+@@ -366,6 +366,7 @@ def test_writer_file_properly_closed(tmpdir):
      assert 1.1 < W._meta["duration"] < 1.3
  
  
@@ -23,14 +23,14 @@ index efcab0a..8f3917e 100644
      # Check that video pixel format and size get written as expected.
  
 diff --git a/tests/test_freeimage.py b/tests/test_freeimage.py
-index 2670138..ab1ae11 100644
+index b45eb1b..6ed63ee 100644
 --- a/tests/test_freeimage.py
 +++ b/tests/test_freeimage.py
-@@ -704,6 +704,7 @@ def test_improps(test_images):
+@@ -689,6 +689,7 @@ def test_improps(setup_library, test_images):
      assert props.is_batch is False
  
  
 +@pytest.mark.xfail
- def test_exr_write():
+ @pytest.mark.needs_internet
+ def test_exr_write(setup_library):
      expected = np.full((128, 128, 3), 0.42, dtype=np.float32)
-     buffer = iio3.imwrite("<bytes>", expected, extension=".exr")
