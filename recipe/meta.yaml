@@ -1,4 +1,4 @@
-{% set version = "2.31.3" %}
+{% set version = "2.31.5" %}
 
 package:
   name: imageio
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/imageio/imageio-{{ version }}.tar.gz
-  sha256: 74c6a832d81b7ad5a8a80976dea58ee033d3e2b99a54990cbd789b4cb0b31461
+  sha256: d8e53f9cd4054880276a3dac0a28c85ba7874084856a55a0294a8ae6ed7f3a8e
   patches:
     - tempfix-pyav-plugin.patch
     - xfail-known-issues.patch
@@ -39,7 +39,7 @@ test:
     - freeimage
     - fsspec
     - requests
-    - av !=10.0.0
+    - av =9.2
     #- opencv
     - imageio-ffmpeg
   imports:
