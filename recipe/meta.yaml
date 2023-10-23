@@ -1,4 +1,4 @@
-{% set version = "2.31.5" %}
+{% set version = "2.31.6" %}
 
 package:
   name: imageio
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/imageio/imageio-{{ version }}.tar.gz
-  sha256: d8e53f9cd4054880276a3dac0a28c85ba7874084856a55a0294a8ae6ed7f3a8e
+  sha256: 721f238896a9a99a77b73f06f42fc235d477d5d378cdf34dd0bee1e408b4742c
 
 build:
   number: 1
