@@ -50,7 +50,8 @@ test:
     # https://github.com/imageio/imageio/issues/890
     # https://github.com/imageio/imageio/issues/910
     # https://github.com/imageio/imageio/issues/911
-    - pytest -sv tests/ -k "not test_findlib2 and not test_format_hint and not test_writer_pixelformat_size_verbose and not test_exr_write"
+    # https://github.com/imageio/imageio/issues/1056
+    - pytest -sv tests/ -k "not test_findlib2 and not test_format_hint and not test_writer_pixelformat_size_verbose and not test_exr_write and not test_heif_remote and not test_avif_remote"
 
 about:
   home: https://imageio.github.io
