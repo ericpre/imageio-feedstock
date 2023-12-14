@@ -33,7 +33,8 @@ test:
     - git
     - pytest
     - psutil
-    - tifffile
+    # test suite fails with older version on conda-forge
+    - tifffile >=2020.7.4
     - gdal
     - astropy
     - freeimage
