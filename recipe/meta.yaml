@@ -7,12 +7,9 @@ package:
 source:
   url: https://pypi.io/packages/source/i/imageio/imageio-{{ version }}.tar.gz
   sha256: d8e53f9cd4054880276a3dac0a28c85ba7874084856a55a0294a8ae6ed7f3a8e
-  patches:
-    - tempfix-pyav-plugin.patch
-    - xfail-known-issues.patch
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
@@ -33,7 +30,8 @@ test:
     - git
     - pytest
     - psutil
-    - tifffile
+    # test suite fails with older version on conda-forge
+    - tifffile >=2020.7.4
     - gdal
     - astropy
     - freeimage
@@ -49,7 +47,10 @@ test:
   commands:
     - imageio_download_bin -h
     - imageio_remove_bin -h
-    - pytest -sv tests/ -k "not test_findlib2"
+    # https://github.com/imageio/imageio/issues/890
+    # https://github.com/imageio/imageio/issues/910
+    # https://github.com/imageio/imageio/issues/911
+    - pytest -sv tests/ -k "not test_findlib2 and not test_format_hint and not test_writer_pixelformat_size_verbose and not test_exr_write"
 
 about:
   home: https://imageio.github.io
